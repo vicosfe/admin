@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic');
+/* font-family: 'Open Sans', sans-serif; */
+@font-face {
+	font-family: "ProximaNova";
+	src: url("../fonts/ProximaNova-Regular.ttf") format("truetype"),
+	url("../fonts/ProximaNova-Regular.woff") format("woff"),
+	url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal
+}@font-face {
+	font-family: "OpenSans";
+	src: url("../fonts/OpenSans-Regular.ttf") format("truetype");	
+	font-weight: normal;
+	font-style: normal
+}@font-face {
+	font-family: "OpenSansLight";
+	src: url("../fonts/OpenSans-Light.ttf") format("truetype");	
+	font-weight: normal;
+	font-style: normal
+}@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSans-Bold.ttf") format("truetype");	
+	font-weight: normal;
+	font-style: normal
+}
+
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	min-width: 1280px;
+	max-width: 1920px;
+	background-color: #fafafa;
+	margin: 0 auto;
+}
+main{
+	margin-bottom: 420px;
+ z-index: 2;
+ background: #fafafa;
+}
+.centerBlock{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-left: 26px;
+	padding-right: 26px;
+}
+.clearfix::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+/*********************************/
+.admSection{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.adminMain{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.leftAdmNav__logoAdm{
+	padding: 15px 40px;
+}
+
+.leftAdmNav{
+    position: fixed;
+    background-color: #2e3036;
+    width: 320px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+.leftAdmNav__LinksNav--wrapper{
+	margin-top: 30px;
+}
+.leftAdmNav__LinksNav--wrapper ul{
+	list-style-type: none;
+	padding: 0 0 0 0.93rem;
+}
+.leftAdmNav__LinksNav--wrapper li{
+	padding: 21px 38px;
+	font-size: 1.125rem;
+	font-family: "OpenSans";
+}
+.leftAdmNav__LinksNav--wrapper li::before{
+	margin-right: 1.25rem;
+}	
+.leftAdmNav__LinksNav--add::before{
+	content: url(../images/add-link-adm.png);
+}
+
+.leftAdmNav__LinksNav--edit::before{
+	content: url(../images/nav-adm-edit.png);
+}
+
+.leftAdmNav__LinksNav--zakazi::before{
+	content: url(../images/nav-adm-zakazi.png);
+}
+
+.leftAdmNav__LinksNav--users::before{
+	content: url(../images/nav-adm-users.png);
+}
+
+.leftAdmNav__LinksNav--settings::before{
+	content: url(../images/nav-adm-settings.png);
+}
+
+.leftAdmNav__LinksNav--active{
+	background-color: rgba(255, 255, 255, 0.09);
+	border-radius: 5px 0 0 5px;
+}
+.leftAdmNav__LinksNav--wrapper a{
+	text-decoration: none;
+	color: #fff;
+	vertical-align: 20%;
+}
+
+.rightAdmContent{
+	position: absolute;
+	left: 320px;
+	width: 1280px;
+	background-color: #fafafa;
+	z-index: 30;
+}
+
+
+
+
+/* ************************************HEADER ADM ****************************/
+.admHeader-wrapper{
+	width: 100%;
+	background-color: #fff;
+		-webkit-box-shadow: 0px 1px 0px rgba(97, 97, 97, 0.06);
+	box-shadow: 0px 1px 0px rgba(97, 97, 97, 0.06);
+	width: 1600px;
+}
+.rightAdmContent__headerAdm{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	background-color: #fff;
+	min-width: 1280px;
+
+}
+.admBg-wh{
+	width: 100%;
+	background-color: #fff;
+    height: 70px;	
+    max-width: 1280px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.panel-adm{
+	position: absolute;
+	bottom: 0;
+	left: 105px;
+	max-width: 735px;
+	width: 100%;	
+}
+.window-search{
+	position: absolute;
+	top: 15px;
+	right: 125px;
+}
+.search-adm-inp{
+	outline: 0;
+	border: 1px solid #eceaea;
+	border-radius: 5px;
+	padding: 10px 10px 10px 33px;
+	font-family: "OpenSansLight";
+	color: #000;
+	font-size: 14px;
+	background-color: #fafafa;
+
+}
+.window-search::before{
+	content: "\f002";
+	font-family: FontAwesome;
+	position: absolute;
+	left: 14px;
+	top: 10px;
+	font-size: 14px;
+	
+}
+/*******   Нижняя панель ********/
+.down-panel-adm{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 16px;
+}
+.tab-panel-adm{
+	padding-bottom: 20px;
+   
+}
+.active-panel-adm{
+	 border-bottom: 3px solid #2e3036;
+}
+.tab-panel-adm a{
+	text-decoration: none;
+	font-family: "OpenSans";
+	font-size: 18px;
+	color: #2e3036;
+}
+/******************************************/
+.notification-adm{
+	width: 16px;
+	height: 20px;
+	position: absolute;
+	right: 79px;
+	top: 25px;
+}
+.notification-adm:hover{
+	cursor: pointer;
+}
+.exit-adm{
+	position: absolute;
+	right: 29px;
+	top: 24px;
+	font-size: 18px;
+	color: #000;
+}
+.exit-adm:hover{
+	color: #fe7373;
+	cursor: pointer;
+}
+
+/***********************Content adm*******************************************************/
