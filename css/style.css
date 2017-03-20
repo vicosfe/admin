@@ -66,7 +66,8 @@ main{
 	width: 100%;
 }
 .leftAdmNav__logoAdm{
-	padding: 15px 40px;
+	padding: 14px 40px;
+	border-bottom: 1px solid #25272c;
 }
 
 .leftAdmNav{
@@ -85,7 +86,7 @@ main{
 	padding: 0 0 0 0.93rem;
 }
 .leftAdmNav__LinksNav--wrapper li{
-	padding: 21px 38px;
+	padding: 18px 38px;
 	font-size: 1.125rem;
 	font-family: "OpenSans";
 }
@@ -113,7 +114,7 @@ main{
 }
 
 .leftAdmNav__LinksNav--active{
-	background-color: rgba(255, 255, 255, 0.09);
+	background-color: #26282d;
 	border-radius: 5px 0 0 5px;
 }
 .leftAdmNav__LinksNav--wrapper a{
@@ -245,3 +246,67 @@ main{
 }
 
 /***********************Content adm*******************************************************/
+.rightAdmContent__content{
+	background-color: #f9f9f9;
+	padding: 1.87rem 1.25rem;
+}
+.wrapperTabs{
+	background-color: #fff;
+	max-width: 1240px;
+}
+.addPlacesAdm__container h1{
+	font-size: 1rem;
+	font-family: "OpenSans";
+	font-weight: 200;
+	padding: 1.25rem;
+	margin: 0;
+  border-bottom: 1px solid #dedede;
+}
+.addPlacesAdm__container--content{
+	padding: 3.125rem;
+}
+.addPlaceFormAdmin p{
+	color: #9a9a9a;
+	font-size: 0.875rem;
+}
+.addPlaceFormAdmin{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.addPlaceFormAdminLeft{
+	max-width: 475px;
+	width: 100%;
+}
+.namePlaceAdm{
+	font-size: 0.875rem;
+	font-family: "OpenSansLight";
+	outline: 0;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 10px;
+	outline: 0;
+	border: 1px solid #dedede;
+	color: #2e3036;
+	background-color: #f7f7f7;
+	text-transform: uppercase;
+}
+#placeDescriptionAdm{
+	padding: 1rem 1.46rem;
+	outline: 0;
+	border-radius: 10px;
+	height: 430px;
+	width: 100%;
+	border: 1px solid #dedede;
+	background-color: #f7f7f7;
+	font-family: "OpenSansLight";
+	color: #2e3036;
+	font-size: 0.875rem;
+	line-height: 1.875rem;
+}
+.addPlaceFormAdminRight{
+	width: 500px;
+}
