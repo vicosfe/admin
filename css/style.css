@@ -263,7 +263,7 @@ main{
   border-bottom: 1px solid #dedede;
 }
 .addPlacesAdm__container--content{
-	padding: 3.125rem;
+	padding: 3.125rem 3.125rem 13rem 3.125rem;
 }
 .addPlaceFormAdmin p{
 	color: #9a9a9a;
@@ -298,7 +298,7 @@ main{
 	padding: 1rem 1.46rem;
 	outline: 0;
 	border-radius: 10px;
-	height: 430px;
+	height: 482px;
 	width: 100%;
 	border: 1px solid #dedede;
 	background-color: #f7f7f7;
@@ -308,5 +308,55 @@ main{
 	line-height: 1.875rem;
 }
 .addPlaceFormAdminRight{
-	width: 500px;
+	width: 545px;
+}
+.addPlaceFormAdminRight__workzone{
+	width: 100%;
+	max-width: 545px;
+	height: 345px;
+	border: 1px solid #dedede;
+}
+.wrapperPrevImg{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3.125rem;
+	position: relative;
+	
+}
+.prewImgAdmPlace{
+	height: 100%;
+}
+.imagePrev{
+	width: 190px;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.imagePrev img{
+	height: 190px;
+	width: 190px;
+	border-radius: 10px;
+}
+.submitAdaImgPlacesAdm{
+	top: 40px;
+	position: absolute;
+}
+.addPlaceAdm{
+	outline: 0;
+	border: 0;
+	width: 290px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	background-color: #0081ff;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+.addPlaceAdm:hover{
+	cursor: pointer;
 }

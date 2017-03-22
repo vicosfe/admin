@@ -21,17 +21,16 @@
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
+	<!-- *************Редактор************* -->
+	<link rel="stylesheet" href="elrte/css/elrte.min.css" type="text/css" media="screen" charset="utf-8">
 	<script src="elrte/js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="elrte/js/jquery-ui-1.8.13.custom.min.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="elrte/css/smoothness/jquery-ui-1.8.13.custom.css" type="text/css" media="screen" charset="utf-8">
-
 	<!-- elRTE -->
 	<script src="elrte/js/elrte.min.js" type="text/javascript" charset="utf-8"></script>
-	<link rel="stylesheet" href="elrte/css/elrte.min.css" type="text/css" media="screen" charset="utf-8">
-
 	<!-- elRTE translation messages -->
 	<script src="elrte/js/i18n/elrte.ru.js" type="text/javascript" charset="utf-8"></script>
-
+	<!-- ******************************************************************************************** -->
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -100,11 +99,28 @@
 
 											<p>Описание места</p>
 											<textarea name="addDescriptionPlaceAdm" id="placeDescriptionAdm" cols="30" rows="10"></textarea>
+											<button class="addPlaceAdm" type="submit">Добавить место	</button>
 										</div>
 
 										<div class="addPlaceFormAdminRight">
-											<div class="el-rte ui-resizable">
-											
+											<p>Противопоказания</p>
+											<div class="addPlaceFormAdminRight__workzone">
+
+												<div id="editor"> <!-- Текстовый редактор --> </div>
+
+												<div class="wrapperPrevImg">
+
+													<!-- Превью загружаемой картинки -->
+													<form action="#" class="formAddplaceImage">
+														<input class="prewImgAdmPlace" type="file" >
+														<input class="submitAdaImgPlacesAdm" type="submit" value="Отправить">
+														<div class="imagePrev"></div>
+
+													</form>
+												</div>
+												
+
+
 											</div>
 										</div>
 										
